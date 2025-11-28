@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+
+# Virtual environment
+venv/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+
+# Generated images
+generated_images/
+
+# Model weights (if large)
+models/

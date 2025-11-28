@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0d0f1a, #1c233d);
+    color: white;
+}
+
+.container {
+    max-width: 650px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffd369;
+}
+
+.card {
+     background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+
+    display: flex;              /* enable flexbox */
+    flex-direction: column;     /* stack children vertically */
+    align-items: center;        /* center horizontally */
+    justify-content: center;    /* center vertically */
+    gap: 20px;                  /* spacing between children */
+    min-height: 400px;          /* makes card tall enough to center vertically */
+}
+
+textarea {
+    width: 100%;
+    height: 110px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #ffb703;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff9500;
+}
+
+#resultImage {
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+#downloadBtn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 22px;
+    background: #4cc9f0;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#downloadBtn:hover {
+    background: #32b5dd;
+}
+
+.loader {
+    border: 8px solid rgba(255,255,255,0.2);
+    border-top: 8px solid #ffb703;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

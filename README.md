@@ -65,7 +65,8 @@ git clone https://github.com/Tejaswini107/AI-image-generator.git
 cd AI-image-generator
 
 
-uvicorn main:app --reload
+uvicorn api:app --reload
+
 
 
 
